@@ -91,6 +91,18 @@
             gap: 5px; /* Add space between messages */
         }
 
+        /* Hide Scroll Bars for Left and Right Content Sections */
+        .chat-display, .chat-display.active {
+            overflow-y: scroll; 
+            scrollbar-width: none; 
+        }
+
+        /* Hide Scroll Bars for Webkit Browsers (e.g., Chrome, Safari) */
+        .chat-display::-webkit-scrollbar,
+        .chat-display.active::-webkit-scrollbar {
+            display: none; 
+            scrollbar-width: 1px;
+        }
         .chat-display.active {
             display: flex; /* Show when active */
         }

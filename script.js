@@ -3,7 +3,7 @@ const userInput = document.getElementById('userInput');
 const sideMenu = document.getElementById('sideMenu');
 let firstMessageSent = false;
 
-/* 
+/*
 function sendMessage() {
     const messageText = userInput.value.trim();
     if (messageText === "") return;
